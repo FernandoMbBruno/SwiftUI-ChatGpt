@@ -11,6 +11,9 @@
 		C5AC3EE029BAA09200C16B5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AC3EDF29BAA09200C16B5B /* ContentView.swift */; };
 		C5AC3EE229BAA09300C16B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5AC3EE129BAA09300C16B5B /* Assets.xcassets */; };
 		C5AC3EE529BAA09300C16B5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5AC3EE429BAA09300C16B5B /* Preview Assets.xcassets */; };
+		C5AC3EED29BAA25D00C16B5B /* ChatGPTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AC3EEC29BAA25D00C16B5B /* ChatGPTView.swift */; };
+		C5AC3EF129BAA27700C16B5B /* ChatGPTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AC3EF029BAA27700C16B5B /* ChatGPTViewModel.swift */; };
+		C5AC3EF329BAA28100C16B5B /* ChatGPTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AC3EF229BAA28100C16B5B /* ChatGPTModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		C5AC3EDF29BAA09200C16B5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C5AC3EE129BAA09300C16B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5AC3EE429BAA09300C16B5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C5AC3EEC29BAA25D00C16B5B /* ChatGPTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTView.swift; sourceTree = "<group>"; };
+		C5AC3EF029BAA27700C16B5B /* ChatGPTViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTViewModel.swift; sourceTree = "<group>"; };
+		C5AC3EF229BAA28100C16B5B /* ChatGPTModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,9 @@
 		C5AC3EDC29BAA09200C16B5B /* ChatGPT */ = {
 			isa = PBXGroup;
 			children = (
+				C5AC3EEF29BAA26900C16B5B /* ViewModel */,
+				C5AC3EEE29BAA26400C16B5B /* Model */,
+				C5AC3EEB29BAA25200C16B5B /* View */,
 				C5AC3EDD29BAA09200C16B5B /* ChatGPTApp.swift */,
 				C5AC3EDF29BAA09200C16B5B /* ContentView.swift */,
 				C5AC3EE129BAA09300C16B5B /* Assets.xcassets */,
@@ -65,6 +74,30 @@
 				C5AC3EE429BAA09300C16B5B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C5AC3EEB29BAA25200C16B5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5AC3EEC29BAA25D00C16B5B /* ChatGPTView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5AC3EEE29BAA26400C16B5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5AC3EF229BAA28100C16B5B /* ChatGPTModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C5AC3EEF29BAA26900C16B5B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C5AC3EF029BAA27700C16B5B /* ChatGPTViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5AC3EF129BAA27700C16B5B /* ChatGPTViewModel.swift in Sources */,
 				C5AC3EE029BAA09200C16B5B /* ContentView.swift in Sources */,
 				C5AC3EDE29BAA09200C16B5B /* ChatGPTApp.swift in Sources */,
+				C5AC3EED29BAA25D00C16B5B /* ChatGPTView.swift in Sources */,
+				C5AC3EF329BAA28100C16B5B /* ChatGPTModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
