@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct Chat: Codable, Hashable {
+    var messages: String
+}
